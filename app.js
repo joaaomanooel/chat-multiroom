@@ -5,5 +5,5 @@ var app = require('./config/server');
 app.listen(7000, function(){
     console.log('Server on');
     console.log('Port: 7000');
-    console.log('url: http://localhost:7000');
+    console.log('URL: http://localhost:7000');
 })
