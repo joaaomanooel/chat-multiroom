@@ -14,21 +14,32 @@ app.set('io', io); //<- Variavel global passada a partir da app
  * criar a conexão por websocket
  */
 io.on('connection', function(socket){
-    console.log('usuario conectou');
-
-    socket.on('disconnect', function(){
-        console.log('usuario desconectou');
-    });
-
     socket.on('msgParaServidor', function(data){
+        /**
+         * Dialogo
+         */
         socket.emit(
-        'msgParaClientes',
-        {apelido : data.apelido, msg: data.msg}    
-    );
+            'msgParaClientes',
+            {apelido : data.apelido, msg: data.msg}    
+        );
     
-    socket.broadcast.emit(
-        'msgParaClientes',
-        {apelido : data.apelido, msg: data.msg}    
-    );
+        socket.broadcast.emit(
+            'msgParaClientes',
+            {apelido : data.apelido, msg: data.msg}    
+        );
+        /**
+         * Participantes
+         */
+        if(parseInt(data.apelido_atualizado) == 0){
+            socket.emit(
+                'participantesParaCliente',
+                {apelido : data.apelido}    
+            );
+    
+            socket.broadcast.emit(
+                'participantesParaCliente',
+                {apelido : data.apelido}    
+            );
+        }
     });
 });
