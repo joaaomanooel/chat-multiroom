@@ -93,7 +93,7 @@
 				<div class="panel-body campo-mensagem">
 					<div class="col-md-12">
 						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Mensagem" id="msg">
+							<input type="text" class="form-control" placeholder="Mensagem" id="msg" autofocus>
 							<input type="hidden" value="<%=dadosForm.apelido%>" id="apelido">
 							<input type="hidden" value="0" id="apelido_atualizado">
 							<span class="input-group-btn">
@@ -109,7 +109,13 @@
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
 			var socket = io('http://localhost:7000');
-			
+
+			//Enter do botão e tals
+			$('#msg').keypress(function(e) {
+				if(e.which == 13) $('#enviar_msg').click();
+			});
+			//fim
+
 			$('#enviar_msg').click(function(){
 				socket.emit(
 					'msgParaServidor',
@@ -142,7 +148,7 @@
 
 				html += '<span class="participante">';
 					html += '<img src="images/ico_usuario.png" />';
-					html += data.apelido;
+					html += "       " + data.apelido;
 				html += '</span>';
 				
 				$('#pessoas').append(html);
