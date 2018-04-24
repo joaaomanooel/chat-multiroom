@@ -13,7 +13,7 @@ Projeto desenvolvido durante o "Curso Completo do Desenvolvedor NodeJS e MongoDB
 
 ### Clonando o Repositório
 
-* [git](https://git-scm.com/downloads) clone https://github.com/joaaomanooel/Curso-Node-Chat-Multiroom.git
+* [git](https://git-scm.com/downloads) clone https://github.com/joaaomanooel/chat-multiroom.git
 
 ### Instalando as Dependências
 

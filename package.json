@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joaaomanooel/Curso-Node-Chat-Multiroom.git"
+    "url": "git+https://github.com/joaaomanooel/chat-multiroom.git"
   },
   "author": "João Manoel Neto",
   "license": "MIT",
-  "homepage": "https://github.com/joaaomanooel/Curso-Node-Chat-Multiroom#readme",
+  "homepage": "https://github.com/joaaomanooel/chat-multiroom#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "consign": "^0.1.6",
