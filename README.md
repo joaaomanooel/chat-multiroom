@@ -19,8 +19,6 @@ Projeto desenvolvido durante o "Curso Completo do Desenvolvedor NodeJS e MongoDB
 
 * [npm](https://www.npmjs.com/get-npm) install
 
-* [npm](https://www.npmjs.com/get-npm) install [@angular/cli](https://cli.angular.io/) -g
-
 ### Inicializando o Servidor
 
 * `ng serve` ou `npm start`
