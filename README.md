@@ -21,4 +21,4 @@ Projeto desenvolvido durante o "Curso Completo do Desenvolvedor NodeJS e MongoDB
 
 ### Inicializando o Servidor
 
-* `ng serve` ou `npm start`
+* `npm start`
