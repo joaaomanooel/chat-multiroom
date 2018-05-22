@@ -5,7 +5,6 @@ Projeto desenvolvido durante o "Curso Completo do Desenvolvedor NodeJS e MongoDB
 ## Tecnologias/Frameworks
 
 * [NodeJS](https://nodejs.org)
-* [MongoDB](https://www.mongodb.com/)
 * [Socket.io](https://socket.io/)
 * [Express](http://expressjs.com/)
 

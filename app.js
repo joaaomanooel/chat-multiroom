@@ -16,26 +16,26 @@ io.on('connection', (socket) => {
     socket.emit(
       'msgParaClientes',
       {
-        apelido: data.apelido,
+        userName: data.userName,
         msg: data.msg
       }
     );
     socket.broadcast.emit(
       'msgParaClientes',
       {
-        apelido: data.apelido,
+        userName: data.userName,
         msg: data.msg
       }
     );
-    const apelidoAtualizado = parseInt(data.apelido_atualizado, 10);
-    if (apelidoAtualizado === 0) {
+    const newUserName = parseInt(data.newUserName, 10);
+    if (newUserName === 0) {
       socket.emit(
         'participantesParaCliente',
-        { apelido: data.apelido }
+        { userName: data.userName }
       );
       socket.broadcast.emit(
         'participantesParaCliente',
-        { apelido: data.apelido }
+        { userName: data.userName }
       );
     }
   });
