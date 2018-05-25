@@ -2,7 +2,7 @@
   "name": "chat_multiroom",
   "version": "1.0.0",
   "description": "This README would normally document whatever steps are necessary to get your application up and running.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/**/*.js",
     "start": "babel-node ./app.js",
@@ -16,11 +16,11 @@
   "license": "MIT",
   "homepage": "https://github.com/joaaomanooel/chat-multiroom#readme",
   "dependencies": {
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.18.3",
     "ejs": "^2.5.6",
-    "express": "^4.15.3",
+    "express": "^4.16.3",
     "express-validator": "^3.2.0",
-    "socket.io": "^2.0.3"
+    "socket.io": "^2.1.1"
   },
   "devDependencies": {
     "babel": "^6.23.0",

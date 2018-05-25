@@ -37,15 +37,15 @@
                         </div>
                     </div>
                     <div>
-                        <% if(validacao.length > 0) { %>
+                        <% if(validation.length > 0) { %>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="alert alert-danger">
                                         <strong>Atenção!</strong>
                                         <ul>
-                                            <% for(let i = 0; i < validacao.length; i++) { %>
+                                            <% for(let i = 0; i < validation.length; i++) { %>
                                                 <li>
-                                                    <%= validacao[i].msg%>
+                                                    <%= validation[i].msg%>
                                                 </li>
                                             <% } %>
                                         </ul>
